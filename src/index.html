@@ -11,6 +11,49 @@
 </head>
 
 <body>
+<div id="nyhedsbrev"
+  class="px-4 py-3 text-white bg-amber-700 items-center sm:px-6 lg:px-8 grid grid-cols-4 flex"
+>
+  <p class="font-medium text-center sm:text-left w-full col-span-2">
+    Spar -20% på din ordre, når du tilmelder dig vores nyhedsbrev!</p>
+ 
+
+  <a
+    class="block px-5 py-3 mt-4 text-sm font-medium text-center text-amber-700 transition bg-white rounded-lg sm:mt-0 hover:bg-white/90 active:text-indigo-500 focus:outline-none focus:ring"
+    href="nyhedsbrev-b.html"
+  >
+    Tilmeld nyhedsbrev
+  </a>
+
+  <div id="close"  class= "grid flex justify-end">
+  <button
+  aria-label="Close"
+ 
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-5 h-5"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+      clip-rule="evenodd"
+    />
+  </svg>
+</button></div>
+</div>
+
+
+<script>
+  const nyhedsbrev = document.querySelector("nyhedsbrev");
+const close = document.querySelector("close");
+
+document.getElementById("close").onclick = function () {
+document.getElementById("nyhedsbrev").style.display = "none";
+};
+</script>
 
   <!-- 
     Indhold:
@@ -20,6 +63,59 @@
      - Featured categories
     Footer
   -->
+
+  <!--Cookie banner start-->
+  <div id="cookieboks" class="fixed bottom-0 right-0 z-50 px-4 lg:px-10  w-full">
+    <div class="relative p-8 bg-gray-500 rounded-xl shadow-xl">
+      <div class="flex flex-wrap items-center -mx-4">
+        <div class="w-full md:w-auto px-4 mb-4 lg:mb-0">
+          <h3 class="mb-2 text-2xl font-bold font-heading text-white">Cookie Policy</h3>
+          <p class="max-w-lg text-gray-200 leading-loose">By clicking &ldquo;Accept&rdquo;, you agree to the storing of cookies on your device to enhance site navigation...</p>
+        </div>
+        <div class="w-full md:w-auto px-4 mb-4 lg:mb-0 flex">
+          <a class="inline-flex ml-auto items-center px-8 py-4 mr-2 text-lg text-white hover:text-gray-100 font-bold" href="#">
+            <span>More</span>
+            <svg class="ml-3 w-6 h-4" width="27" height="15" viewbox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M26.0851 7.66792L19.398 14.355L18.5621 13.5192L24.242 7.83927L0.590432 7.84345L0.590431 6.66485L24.242 6.66067L18.98 1.39873L19.8159 0.562843L26.0851 6.83202C26.3159 7.06286 26.3159 7.43708 26.0851 7.66792Z" fill="white"></path>
+            </svg>
+          </a>
+          <button id="accept"><a class="inline-block px-12 py-4 text-lg bg-transparent text-white font-bold border border-gray-300 hover:border-gray-200 rounded-full" href="#">Accept</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cookieboks = document.querySelector("cookieboks");
+const accept = document.querySelector("accept");
+
+document.getElementById("accept").onclick = function () {
+  document.getElementById("cookieboks").style.display = "none";
+};
+  </script>
+  
+    <!--Cookie banner done-->
+
+<!--Handelsbetingelser-->
+    <div
+  class="px-4 py-3 text-white bg-gray-500 sm:justify-center sm:items-center sm:flex sm:px-4 lg:px-5"
+>
+<div class="flex gap-16 justify-center">
+  <div
+      class=" text-base text-white">Afsendelse 1-2 hverdage</div>
+  
+
+ <div
+      class=" text-base text-white">Fri fragt</div>
+
+   <div
+      class=" text-base text-white">30 dages fuld returret </div>
+
+    
+  </div>
+</div>
+
+<!--Handelsbetingelser done-->
 
   <!-- Navigation -->
   <div class="">
@@ -62,9 +158,14 @@
               </a>
             </h1>
             <ul class="hidden w-8/12 md:flex items-center justify-center space-x-8">
-              <a href="shop.html"
-                class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Shop/Plakater</a>
+            <li>  <a href="shop.html"
+                class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Plakater</a>
               </li>
+
+              <li>
+                <a href="litteratur.html"
+                    class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Litteratur</a>
+            </li>
               <li>
                 <a href="inspiration.html"
                   class=" text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Inspiration</a>
@@ -226,29 +327,183 @@
   </div>
   <!-- Navigation slut -->
 
-  <!-- Content -->
 
-  <div class="mx-auto container px-6 xl:px-0 py-12">
-    <div class="flex flex-col">
       <!-- Hero -->
-      <div class="flex flex-col justify-center">
-        <div class="relative">
-          <img class="hidden sm:block w-full" src="content/lunefuld-lykke-header.jpg" alt="plakat i stue" />
-          <img class="sm:hidden w-full" src="content/lunefuld-lykke-header.jpg" alt="plakat i stue" />
-          <div
-            class="absolute sm:bottom-8 bottom-4 sm:top-8 top-4 pr-10 sm:pr-0 left-4 sm:left-8 flex justify-self-center items-center">
-            <p
-              class="text-3xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-semibold leading-9 text-white max-w-sm text-shadow">
-              Lunefuld Lykke -
-              Stemningsfulde plakater
+
+
+      <aside class="relative overflow-hidden text-white">
+        <div class="relative z-10 max-w-screen-xl px-4 py-24 mx-auto sm:px-6 lg:px-8">
+          <div class="max-w-xl space-y-8 text-center sm:text-right sm:ml-auto">
+            <h2 class="text-4xl font-bold sm:text-5xl text-amber-700">
+              Plakater til ethvert hjem
+              <span class="hidden sm:block">
+                og ethvert rum
+              </span>
+            </h2>
+      
+            <p class="hidden sm:block sm:max-w-lg sm:ml-auto sm:text-lg">
+              Hos os kan du være sikker på at finde plakater, du kan lide. Uanset stil og smag kan du med vores mange forskellige kategoerier, finde netop de plakater der passer til dit hjem.
+
             </p>
+      
+            <a class="inline-flex items-center px-6 py-3 font-medium bg-amber-600 rounded-full hover:bg-amber-500" href="shop.html">
+              Find mine nye plakater nu
+      
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4 ml-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
           </div>
         </div>
-      </div>
+      
+        <div class="absolute inset-0 w-full h-full mix-blend-multiply opacity-70">
+          <img
+            src="content/inspirationsguide-plakat.jpg"
+            alt="plakat i stuen"
+            class="absolute inset-0 object-cover  w-full h-full"
+          />
+        </div>
+      </aside>
+      
+
+
+
+
       <!-- Hero slut -->
 
-      <!-- Featured categories-->
-      <div class="mt-10 grid lg:grid-cols-2 gap-x-8 gap-y-8 items-center">
+   
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<!--
+  This component uses @tailwindcss/aspect-ratio
+
+  yarn add @tailwindcss/aspect-ratio
+  npm install @tailwindcss/aspect-ratio
+
+  plugins: [require('@tailwindcss/aspect-ratio')]
+-->
+<!--featured litteratur categories start-->
+<section>
+  <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:items-stretch">
+      <div class="flex items-center p-8 bg-gray-100 rounded">
+        <div class="mx-auto text-center lg:text-left">
+          <h2 class="text-3xl font-bold text-amber-700">
+            Nyhed!
+          </h2>
+
+          <p class="mt-4 text-sm text-gray-700 max-w-[45ch]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, cupiditate mollitia saepe vitae libero nobis.
+          </p>
+
+         
+          <a class="mt-5 text-white inline-flex items-center px-6 py-3 font-medium bg-amber-600 rounded-full hover:bg-amber-500" href="litteratur.html">
+            Vis alle
+    
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-4 h-4 ml-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 lg:col-span-2 lg:grid-cols-3 lg:py-12">
+        <a
+          href="litteraturprodukt.html"
+          class="block"
+        >
+          <div class="aspect-w-1 aspect-h-1">
+            <img
+              loading="lazy"
+              alt="Bogen"
+              class="object-cover rounded h-96 w-72"
+              src="content/litteratur/rucksack_af_bernard_dubois.jpg"
+            />
+          </div>
+
+          <div class="mt-2">
+            <h5 class="font-medium">
+              Rucksack
+            </h5>
+
+            <p class="mt-1 text-sm text-gray-700">
+              399 kr.
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="litteraturprodukt.html"
+          class="block"
+        >
+          <div class="aspect-w-1 aspect-h-1">
+            <img
+              loading="lazy"
+              alt="Simple Watch"
+              class="object-cover rounded h-96 w-72"
+              src="content/litteratur/streets_of_new_york_af_denise_richards.jpg"
+            />
+          </div>
+
+          <div class="mt-2">
+            <h5 class="font-medium">
+              Streets of New York
+            </h5>
+
+            <p class="mt-1 text-sm text-gray-700">
+              199 kr.
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="litteraturprodukt.html"
+          class="block"
+        >
+          <div class="aspect-w-1 aspect-h-1">
+            <img
+              loading="lazy"
+              alt="Simple Watch"
+              class="object-cover rounded h-96 w-72"
+              src="content/litteratur/the_polaroid_book_af_barbara_hitchcock.jpg"
+            />
+          </div>
+
+          <div class="mt-2">
+            <h5 class="font-medium">
+             The Polaroid book
+            </h5>
+
+            <p class="mt-1 text-sm text-gray-700">
+              299 kr.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- Featured categories litteratur slut -->
+
+        <div class="bg-gray-100 p-10">
+        <h3 class="mt-10 font-black text-4xl flex justify-center items-center text-gray-600">Plakater
+        </h3>
+        <h4 class="mt-10 font-medium text-xl flex justify-center items-center">Vi har plakater i mange forskellige kategorier</h4>
+      <!-- Featured categories plakater-->
+      <div class="mt-10 grid lg:grid-cols-4 gap-x-8 gap-y-8 items-center">
 
         <div
           class="group group-hover:bg-opacity-60 transition duration-500 relative bg-gray-50   sm:pt-28 sm:pb-8 px-8 pt-36 pb-36 flex justify-left">
@@ -256,11 +511,11 @@
               src="content/trae-poster.jpg" alt="sofa-4" /></a>
           <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
             <div>
-              <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 ">
+              <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-amber-600 font-black">
                 Plakater med naturen i fokus</p>
             </div>
             <div>
-              <p class="group-hover:opacity-60 transition duration-500 text-xl font-semibold leading-5 text-gray-800 ">
+              <p class="group-hover:opacity-60 transition duration-500 text-xl font-semibold leading-5 text-grey-600">
                 Fra 199.-</p>
             </div>
           </div>
@@ -273,11 +528,11 @@
               src="content/poster-byen.jpg" alt="sofa-4" /></a>
           <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
             <div>
-              <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 ">
+              <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-amber-600 font-black">
                 Plakater med byen i fokus</p>
             </div>
             <div>
-              <p class="group-hover:opacity-60 transition duration-500 text-xl font-semibold leading-5 text-gray-800 ">
+              <p class="group-hover:opacity-60 transition duration-500 text-xl font-semibold leading-5 text-gray-600">
                 Fra 199.-</p>
             </div>
           </div>
@@ -290,11 +545,11 @@
               src="content/minimalisme-poster.jpg" alt="sofa-4" /></a>
           <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
             <div>
-              <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 ">
+              <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-amber-600 font-black ">
                 Minimalistiske plakater</p>
             </div>
             <div>
-              <p class="group-hover:opacity-60 transition duration-500 text-xl font-semibold leading-5 text-gray-800 ">
+              <p class="group-hover:opacity-60 transition duration-500 text-xl font-semibold leading-5 text-grey-600">
                 Fra 199.-</p>
             </div>
           </div>
@@ -307,11 +562,11 @@
               src="content/poster-sort-hvid.jpg" alt="sofa-4" /></a>
           <div class="absolute sm:top-8 top-4 left-4 sm:left-8 flex justify-start items-start flex-col space-y-2">
             <div>
-              <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-gray-600 ">
+              <p class="group-hover:opacity-60 transition duration-500 text-xl leading-5 text-amber-600 font-black">
                 Sort/hvid</p>
             </div>
             <div>
-              <p class="group-hover:opacity-60 transition duration-500 text-xl font-semibold leading-5 text-gray-800 ">
+              <p class="group-hover:opacity-60 transition duration-500 text-xl font-semibold leading-5 text-grey-600">
                 Fra 199.-</p>
             </div>
           </div>
@@ -319,13 +574,290 @@
         </div>
 
       </div>
-      <!-- Featured categories slut -->
+      <!-- Featured categories plakater slut -->
     </div>
   </div>
+</div>
   <!-- Content slut-->
 
+<!--testimonials start-->
+<link
+  crossorigin="anonymous"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  rel="stylesheet"
+/>
+
+<script
+  crossorigin="anonymous"
+  defer
+  src="https://unpkg.com/swiper/swiper-bundle.min.js"
+></script>
+
+<style>
+  .swiper-container {
+    overflow: hidden;
+  }
+</style>
+
+<section class="bg-white">
+  <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 sm:py-24">
+    <h2 class="text-3xl font-bold text-amber-700 text-center">
+      Anmeldelser fra vores kunder
+    </h2>
+
+    <div class="mt-12 swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <blockquote class="p-8 bg-gray-100 rounded-lg">
+            <div class="flex items-center">
+              <img
+                src="https://www.hyperui.dev/photos/man-4.jpeg"
+                alt=""
+                class="object-cover w-16 h-16 rounded-full"
+              />
+
+              <div class="ml-4">
+                <div class="flex space-x-0.5 justify-center text-green-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-1 text-lg font-medium text-gray-700">Katie</p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              voluptatem alias ut provident sapiente repellendus.
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="swiper-slide">
+          <blockquote class="p-8 bg-gray-100 rounded-lg">
+            <div class="flex items-center">
+              <img
+                src="https://www.hyperui.dev/photos/man-4.jpeg"
+                alt=""
+                class="object-cover w-16 h-16 rounded-full"
+              />
+
+              <div class="ml-4">
+                <div class="flex space-x-0.5 justify-center text-green-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-1 text-lg font-medium text-gray-700">Katie</p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              voluptatem alias ut provident sapiente repellendus.
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="swiper-slide">
+          <blockquote class="p-8 bg-gray-100 rounded-lg">
+            <div class="flex items-center">
+              <img
+                src="https://www.hyperui.dev/photos/man-4.jpeg"
+                alt=""
+                class="object-cover w-16 h-16 rounded-full"
+              />
+
+              <div class="ml-4">
+                <div class="flex space-x-0.5 justify-center text-green-700">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-1 text-lg font-medium text-gray-700">Katie</p>
+              </div>
+            </div>
+
+            <p class="mt-4 text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              voluptatem alias ut provident sapiente repellendus.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 32,
+      centeredSlides: true,
+      autoplay: {
+        delay: 8000,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    })
+  })
+</script>
+<!--testimonials done-->
+
   <!-- Footer -->
-  <footer class="bg-gray-800">
+  <footer class="bg-gray-600">
     <div class="mx-auto container py-16 xl:px-20 lg:px-12 sm:px-6 px-4">
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
         <div class="flex flex-col flex-shrink-0">
@@ -411,10 +943,28 @@
         </div>
       </div>
     </div>
+    <div class="flex gap-16 justify-center p-5">
+  <a href="click-through-a.html"
+      class=" text-base text-white focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">CTA A</a>
+  
+
+ <a href="click-through-b.html"
+      class=" text-base text-white focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">CTA B</a>
+
+   <a href="nyhedsbrev.html"
+      class=" text-base text-white focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Nyhedsbrev A</a>
+
+ <a href="nyhedsbrev-b.html"
+      class=" text-base text-white focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">Nyhedsbrev B</a>
+  
+
+     <a href="post-how-to.html"
+      class=" text-base text-white focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline">How to</a>
+    
+  </div>
   </footer>
   <!-- Footer slut -->
 
-  <script type="module" src="index.js"></script>
 </body>
 
 </html>
