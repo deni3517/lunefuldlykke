@@ -4,7 +4,7 @@
 
    <url>
 
-      <loc>index.html/</loc>
+      <loc>index.html</loc>
 
       <lastmod>2005-01-01</lastmod>
 
@@ -16,7 +16,7 @@
 
    <url>
 
-      <loc>http://www.example.com/catalog?item=12&amp;desc=vacation_hawaii</loc>
+      <loc>shop.html</loc>
 
       <changefreq>weekly</changefreq>
 
@@ -24,7 +24,7 @@
 
    <url>
 
-      <loc>http://www.example.com/catalog?item=73&amp;desc=vacation_new_zealand</loc>
+      <loc>litteratur.html</loc>
 
       <lastmod>2004-12-23</lastmod>
 
@@ -34,7 +34,7 @@
 
    <url>
 
-      <loc>http://www.example.com/catalog?item=74&amp;desc=vacation_newfoundland</loc>
+      <loc>produkt.html</loc>
 
       <lastmod>2004-12-23T18:00:15+00:00</lastmod>
 
@@ -44,10 +44,68 @@
 
    <url>
 
-      <loc>http://www.example.com/catalog?item=83&amp;desc=vacation_usa</loc>
+      <loc>litteraturprodukt.html</loc>
 
       <lastmod>2004-11-23</lastmod>
 
    </url>
+
+      <url>
+
+      <loc>inspiration.html</loc>
+
+      <lastmod>2004-11-23</lastmod>
+
+   </url>
+
+ <url>
+
+      <loc>om.html</loc>
+
+      <lastmod>2004-11-23</lastmod>
+
+   </url>
+
+
+<url>
+
+      <loc>post.html</loc>
+
+      <lastmod>2004-11-23</lastmod>
+
+</url>
+
+<url>
+
+      <loc>post-how-to.html</loc>
+
+      <lastmod>2004-11-23</lastmod>
+      
+</url>
+
+<url>
+
+      <loc>kategori.html</loc>
+
+      <lastmod>2004-11-23</lastmod>
+      
+</url>
+
+      <url>
+
+      <loc>nyhedsbrev.html</loc>
+
+      <lastmod>2004-11-23</lastmod>
+
+   </url>
+   
+      <url>
+
+      <loc>nyhedsbrev-b.html</loc>
+
+      <lastmod>2004-11-23</lastmod>
+
+   </url>
+
 
 </urlset>
