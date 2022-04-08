@@ -18,7 +18,11 @@
 
       <loc>shop.html</loc>
 
-      <changefreq>weekly</changefreq>
+     <lastmod>2005-01-01</lastmod>
+
+     <changefreq>weekly</changefreq>
+
+
 
    </url>
 
@@ -36,9 +40,9 @@
 
       <loc>produkt.html</loc>
 
-      <lastmod>2004-12-23T18:00:15+00:00</lastmod>
+      <lastmod>2004-12-23</lastmod>
 
-      <priority>0.3</priority>
+      <changefreq>weekly</changefreq>
 
    </url>
 
@@ -46,7 +50,9 @@
 
       <loc>litteraturprodukt.html</loc>
 
-      <lastmod>2004-11-23</lastmod>
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
 
    </url>
 
@@ -54,15 +60,20 @@
 
       <loc>inspiration.html</loc>
 
-      <lastmod>2004-11-23</lastmod>
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
 
    </url>
+
 
  <url>
 
       <loc>om.html</loc>
 
-      <lastmod>2004-11-23</lastmod>
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
 
    </url>
 
@@ -71,7 +82,9 @@
 
       <loc>post.html</loc>
 
-      <lastmod>2004-11-23</lastmod>
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
 
 </url>
 
@@ -79,7 +92,9 @@
 
       <loc>post-how-to.html</loc>
 
-      <lastmod>2004-11-23</lastmod>
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
       
 </url>
 
@@ -87,7 +102,9 @@
 
       <loc>kategori.html</loc>
 
-      <lastmod>2004-11-23</lastmod>
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
       
 </url>
 
@@ -95,7 +112,9 @@
 
       <loc>nyhedsbrev.html</loc>
 
-      <lastmod>2004-11-23</lastmod>
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
 
    </url>
    
@@ -103,7 +122,9 @@
 
       <loc>nyhedsbrev-b.html</loc>
 
-      <lastmod>2004-11-23</lastmod>
+      <lastmod>2004-12-23</lastmod>
+
+      <changefreq>weekly</changefreq>
 
    </url>
 
